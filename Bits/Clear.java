@@ -15,5 +15,11 @@ public class Clear {
         String ans = Integer.toBinaryString(res);
         return ans;
     }
+    public static String set(String s,int i){
+        int num = Integer.parseInt(s,2);
+        int bitmask = 1<<i;
+        int res = num | bitmask;
+        return Integer.toBinaryString(res);
+    }
     
 }
