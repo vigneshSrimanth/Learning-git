@@ -21,5 +21,11 @@ public class Clear {
         int res = num | bitmask;
         return Integer.toBinaryString(res);
     }
+    public static int get(String s, int i){
+        int num = Integer.parseInt(s,2);
+        int bitmask = 1<<i;
+        if((num & bitmask) != 0) return 1;
+        return 0;
+    }
     
 }
